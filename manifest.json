@@ -1,0 +1,19 @@
+{
+	"name": "百度网盘（百度云）直连下载",
+	"description": "百度网盘（百度云）直连下载扩展。支持所有Chromium内核的浏览器。本扩展无任何多余的权限！",
+	"content_scripts": [
+		{
+			"all_frames" : true,
+			"run_at": "document_start",
+			"matches" : ["https://pan.baidu.com/*","https://yun.baidu.com/*"],
+			"js"      : ["baiduyun.js"]
+		}
+	],
+	"icons": { "128": "img/128.png"},
+	"browser_action": {
+        "default_icon": "img/48.png"
+    },
+	"version": "1.0.0",
+	"manifest_version": 2,
+	"homepage_url" : "https://51.RUYO.net"
+}
